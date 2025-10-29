@@ -1,0 +1,22 @@
+{
+    "root": "./",
+    "clean_urls": false,
+    "routes": {
+        "/**": "index.html"
+    },
+    "headers": {
+        "/**/*.br": {
+            "Content-Encoding": "br",
+            "Cache-Control": "public, max-age=31536000"
+        },
+        "/**/*.js": {
+            "Content-Type": "application/javascript"
+        },
+        "/**/*.wasm": {
+            "Content-Type": "application/wasm"
+        },
+        "/**/*.data": {
+            "Content-Type": "application/octet-stream"
+        }
+    }
+}
